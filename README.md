@@ -1,4 +1,5 @@
 # Welcome to Password Generator!
+This is a simple password generator app that allows you to select some criteria for the password you want. It's still a work in progress.
 
 ## Interaction
 - Length: Feel free to input any number you wish! Normally the password length is 8
@@ -12,3 +13,5 @@ Install dependencies `npm ci`
 
 ## Tests
 `npm test`
+
+<img width="989" alt="Screen Shot 2024-05-09 at 3 05 29 PM" src="https://github.com/shannenye/pw-generator/assets/30578065/53190340-72b0-40bb-b321-fefd6410e864">

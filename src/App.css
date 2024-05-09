@@ -1,38 +1,73 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-form-wrapper {
+  width: 350px;
+  padding: 30px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 25px;
+  margin: 10px;
+  background: var(--light-blue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-form {
   display: flex;
   flex-direction: column;
+}
+
+.App-form-label {
+  margin-bottom: 30px;
+}
+
+.App-form-label-name {
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.App-form-label-required {
+  color: var(--red);
+  margin-left: 2px;
+}
+
+.App-form-label-subtype {
+  color: var(--black);
+  font-weight: 400;
+  text-transform: capitalize;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-form-label-name-subtype {
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-form-input,
+.App-form-label-subtype {
+  margin-left: 40px;  
+}
+
+.App-form-label-subtype.disabled * {
+  color: var(--gray);
+  user-select: none;
+}
+
+.App-form-input--number {
+  width: 65px;
+}
+
+.App-form-input--text {
+  width: 250px;
+}
+
+.App-form-checkbox,
+.App-form-radio {
+  line-height: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.App-pw-wrapper {
+  margin-left: 200px;
 }
